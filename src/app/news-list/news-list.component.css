@@ -1,0 +1,24 @@
+.cards-al{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 24px;
+    margin-right: 24px;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+
+    
+}
+
+.img{
+    max-height: 150px;
+
+}
+.card-text{
+    text-align: justify;
+
+}
