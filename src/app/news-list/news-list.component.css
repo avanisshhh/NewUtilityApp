@@ -22,3 +22,17 @@
     text-align: justify;
 
 }
+
+.title-overflow {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /* text-overflow: ellipsis;  */
+    max-height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.news-details{
+    max-height: 123px;  
+    overflow: hidden; 
+}
