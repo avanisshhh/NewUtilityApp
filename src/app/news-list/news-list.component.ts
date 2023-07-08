@@ -31,15 +31,17 @@ export class NewsListComponent implements OnInit {
     })
   }
 
-  selectedDate:any;
-  filterDate(date:any){
-    
-    if(date){
-      this.cardList = this.cardList.filter((x:any)=>x.publishedAt==date)
-    }else{
-      this.cardList = this.cardCopy;  
+  selectedDate = '2023-07-07'
+  filtered = false
+  filterDate(date: any) {
+    if (date) {
+      this.cardList = this.cardList.filter((x: any) => x.publishedAt.slice(0, 10) == date)
+      this.filtered = true;
+    } else {
+      this.cardList = this.cardCopy;
+      this.filtered = false;
     }
-    console.log(this.cardList)
+    // console.log(this.cardList)
   }
 
 }

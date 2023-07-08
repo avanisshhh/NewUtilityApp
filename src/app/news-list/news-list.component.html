@@ -30,12 +30,12 @@
           <!-- <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li> -->
-          <li>
-            <a href="#" class="nav-link" (click)="filterDate('2023-07-07T11:18:07Z');"><i
+          <li *ngIf="!filtered">
+            <a href="#" class="nav-link" (click)="filterDate(selectedDate);"><i
                 class="bi bi-funnel"></i>Filter</a>
           </li>
-          <li>
-            <a href="#" class="nav-link" (click)="filterDate('')"><i class="bi bi-funnel"></i>Clear</a>
+          <li *ngIf="filtered">
+            <a href="#" class="nav-link" (click)="filterDate('')"><i class="bi bi-funnel"></i>Clear filters</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
