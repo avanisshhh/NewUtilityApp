@@ -1,24 +1,66 @@
-.cards-al{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+body {
+  width: 100%;
+}
+.bg-body-tertiary {
+  background-color: rgb(207, 230, 39) !important;
+}
+.container-fluid {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards-al {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.card{
-    margin-top: 24px;
-    margin-right: 24px;
-    min-width: 300px;
-    min-height: 400px;
-    max-height: 400px;
-
-    
+.card {
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+  min-width: 300px;
+  min-height: 400px;
+  max-height: 400px;
 }
 
-.img{
-    max-height: 150px;
-
+.img {
+  max-height: 150px;
 }
-.card-text{
-    text-align: justify;
+.btn-pos {
+  margin-left: auto;
+}
+.card-text {
+  text-align: justify;
+}
+.fil-pos {
+  margin-left: auto;
+}
 
+.filter {
+  display: inline-flex;
+  align-items: center;
+  /* margin-left: 24px; */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+p {
+  text-overflow: ellipsis;
+  height: 100px;
+  overflow: auto;
+}
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
