@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .card{
@@ -9,9 +11,7 @@
     margin-right: 24px;
     min-width: 300px;
     min-height: 400px;
-    max-height: 400px;
-
-    
+    max-height: 400px;      
 }
 
 .img{

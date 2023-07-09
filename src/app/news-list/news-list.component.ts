@@ -35,12 +35,14 @@ export class NewsListComponent implements OnInit {
   filtered = false
   filterDate(date: any) {
     if (date) {
-      this.cardList = this.cardList.filter((x: any) => x.publishedAt.slice(0, 10) == date)
+      this.cardList = this.cardList?.filter((x: any) => x.publishedAt.slice(0, 10) == date)
       this.filtered = true;
     } else {
       this.cardList = this.cardCopy;
       this.filtered = false;
     }
+    // console.log(this.range.value.start);    
+    // console.log(date);    
     // console.log(this.cardList)
   }
 
