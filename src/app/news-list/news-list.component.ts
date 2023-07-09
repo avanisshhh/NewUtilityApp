@@ -48,7 +48,7 @@ export class NewsListComponent implements OnInit {
   applyFilters() {
     if (this.filter.fromDate && this.filter.toDate) {
       this.Date1 = new Date(this.filter.fromDate);
-      this.Date2 = new Date(this.filter.toDate);
+      this.Date2 = new Date(this.filter.toDate);  
       this.fromDate = this.convertDateFormat(this.Date1);
       this.toDate = this.convertDateFormat(this.Date2);
       this.filteredCards = this.cardList.filter((cards: Card) => {
@@ -56,8 +56,11 @@ export class NewsListComponent implements OnInit {
         return cardDate >= this.fromDate && cardDate <= this.toDate;
       });
       console.log(this.filteredCards, 'new filtered cards');
+      // return this.filteredCards;   
+    } else {
+      this.filteredCards = this.list.articles;
+      console.log(this.filteredCards, 'new filtered cards');
     }
-    return this.filteredCards;
   }
   //search method to search for a cards
   searchCards() {
